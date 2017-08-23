@@ -24,6 +24,7 @@ script:
   - vendor/bin/phpspec run --verbose
   - vendor/bin/parallel-lint --exclude vendor .
   - vendor/bin/phpunit --verbose --coverage-clover build/logs/clover.xml
+  - dredd apiary.apib localhost:8001/api --server "php -S 0.0.0.0:8001 -t public/"
 
 after_script:
   - vendor/bin/test-reporter
