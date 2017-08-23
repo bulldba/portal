@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "dredd": "^4.3.0",
+    "hercule": "^4.1.0"
+  }
+}

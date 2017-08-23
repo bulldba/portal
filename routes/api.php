@@ -16,3 +16,12 @@
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
+
+Route::get('/threads', function () {
+    return [
+        [
+            'subject' => 'Test Thread',
+            'body' => 'This is a thread.'
+        ]
+    ];
+});

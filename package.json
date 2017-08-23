@@ -24,6 +24,7 @@
   "devDependencies": {
     "axios": "^0.15.3",
     "cross-env": "^3.2.3",
+    "dredd": "^4.3.0",
     "laravel-mix": "^0.8.3",
     "lodash": "^4.17.4",
     "vue": "^2.1.10"
