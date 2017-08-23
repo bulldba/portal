@@ -17,3 +17,20 @@ This document describes the api for the Laravel.io portal.
                     "body": "Test foo"
                 }
             ]
+
+### Create Thread [POST]
+
++ Request
+
+        {
+            "subject": "Test Thread",
+            "body": "Test foo"
+        }
+        
++ Response 201 (application/json)
+
+            {
+                "id": 1,
+                "subject": "Test Thread",
+                "body": "Test foo"
+            }

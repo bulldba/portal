@@ -1,6 +1,5 @@
 <?php
 
-
 Route::get('/threads', function () {
     return [
         [
@@ -9,6 +8,16 @@ Route::get('/threads', function () {
         ],
     ];
 });
+
+Route::post('/threads', function () {
+    return response()->json([
+        'id' => 1,
+        'subject' => 'Test Thread',
+        'body' => 'Test foo',
+    ], 201);
+});
+
+
 
 
 
