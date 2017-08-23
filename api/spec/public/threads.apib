@@ -1,0 +1,30 @@
+## Threads [/users]
+
+### Retrieve a list of threads [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": 1,
+                "subject": "some title",
+                "username": "some content"
+            }
+        ]
+
+### Post a thread [POST]
+
++ Request
+
+        {
+            "subject": "some title",
+            "username": "some content"
+        }
+
++ Response 201 (application/json)
+    
+        {
+            "id": 2,
+            "subject": "some title",
+            "username": "some content"
+        }
