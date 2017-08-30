@@ -5,7 +5,7 @@ use Dredd\Hooks;
 $app = require __DIR__.'/../app.php';
 
 Hooks::beforeEach(function (&$transaction) use ($app) {
-    $transaction->request->headers->Authorization = "Bearer as8d9dsfk8asdfs8fsfa9f";
+    $transaction->request->headers->Authorization = "Bearer as8d9dsf8asdfs8fsfa9f";
 });
 
 //Hooks::beforeEach(function (&$transaction) use ($app) {
