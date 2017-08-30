@@ -1,14 +1,14 @@
 <?php
 
-//Route::get('/threads', function () {
-//    return [
+Route::get('/threads', function () {
+    return [
 //        [
 //            'id' => 1,
-//            'subject' => 'Test Thread',
+//            'subject' => 'Test',
 //            'body' => 'Test foo',
 //        ],
-//    ];
-//});
+    ];
+});
 
 
 
