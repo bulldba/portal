@@ -2,11 +2,11 @@
 
 Route::get('/threads', function () {
     return [
-//        [
-//            'id' => 1,
-//            'subject' => 'Test',
-//            'body' => 'Test foo',
-//        ],
+        [
+            'id' => 1,
+            'subject' => 'Test',
+            'body' => 'Test foo',
+        ],
     ];
 });
 
@@ -15,13 +15,13 @@ Route::get('/threads', function () {
 
 
 
-//Route::post('/threads', function () {
-//    return response([
-//        'id' => 1,
-//        'subject' => 'Test Thread',
-//        'body' => 'Test foo',
-//    ], 201);
-//});
+Route::post('/threads', function () {
+    return response([
+        'id' => 2,
+        'subject' => 'Test Thread',
+        'body' => 'Test foo',
+    ], 201);
+});
 
 
 
