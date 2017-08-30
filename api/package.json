@@ -6,6 +6,6 @@
   "scripts": {
     "build": "hercule spec/public/intro.apib -o build/public.apib && hercule spec/private/intro.apib -o build/private.apib",
     "public": "yarn build && dredd build/public.apib laravelio.app/api",
-    "private": "yarn build && dredd build/private.apib laravelio.app/api/private"
+    "private": "yarn build && dredd build/private.apib laravelio.app/api/private --language ../vendor/bin/dredd-hooks-php --hookfiles ./hooks/private/hooks.php"
   }
 }

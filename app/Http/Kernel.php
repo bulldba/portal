@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\ApiAuth;
 use App\Http\Middleware\TrimStrings;
 use App\Http\Middleware\SiteIndexing;
 use App\Http\Middleware\EncryptCookies;
@@ -69,6 +70,7 @@ class Kernel extends HttpKernel
     protected $routeMiddleware = [
         'auth' => Authenticate::class,
         'auth.basic' => AuthenticateWithBasicAuth::class,
+        'api.auth' => ApiAuth::class,
         'bindings' => SubstituteBindings::class,
         'can' => Authorize::class,
         'guest' => RedirectIfAuthenticated::class,
